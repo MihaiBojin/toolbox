@@ -66,6 +66,9 @@ if [[ -n "$pass" ]]; then
     echo "OR"
     echo "pinentry-program /usr/local/bin/pinentry-tty"
     echo
+    echo "You may also need to:"
+    echo "export GPG_TTY=\"$(tty)\""
+    echo
 fi
 
 echo
